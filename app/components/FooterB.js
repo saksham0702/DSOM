@@ -61,7 +61,7 @@ const FooterB = () => {
             <div className=" relative right-2 flex text-2xl items-center">
               <TfiInfo />
 
-              <h3 className="  text-xl">Important Links</h3>
+              <h3 className=" text-lg">Important Links</h3>
             </div>
 
             <ul className="mt-6 space-y-1 text-blue-600  ">
@@ -102,7 +102,7 @@ const FooterB = () => {
             <div className="flex text-2xl relative right-2 items-center">
               <IoSearchSharp />
 
-              <h3 className=" text-xl">Quick Links</h3>
+              <h3 className=" text-lg">Quick Links</h3>
             </div>
             <ul className="mt-6 space-y-1 text-blue-600 ">
               <li className="flex items-center relative right-2 gap-1">
@@ -175,7 +175,7 @@ const FooterB = () => {
             </p>
           </div>
 
-          {/* Give your Feedback */}
+        
           {/* Give your Feedback */}
           <div>
             <h3 className="font-bold">Give your Feedback</h3>
