@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Left = () => {
   return (
-    <div className='bg-[#ebeced]/70 w-[348.656px] h-[202.578px] pt-4 pl-6 flex flex-col rounded-md relative right-3 mt-3 px-4 gap-2'>
+    <div className=' hidden bg-[#ebeced]/70 w-[348.656px] h-[202.578px] pt-4 pl-6 md:flex flex-col rounded-md relative right-3 mt-3 px-4 gap-2'>
         <h1 className='mt-2 font-bold text-[22px] '>
         Quick Information
         </h1>

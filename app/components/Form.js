@@ -4,7 +4,7 @@ const Form = () => {
   return (
     
        
-          <div className=" w-[348px] h-[474.984px] flex items-center justify-center relative right-3 top-4 bg-[#f0f9f9] ">
+          <div className=" w-[348px] h-[474.984px] hidden md:flex items-center justify-center relative right-3 top-4 bg-[#f0f9f9] ">
             <div className=" px-4">
               <div className="text-[#212529] relative bottom-10 ">
                <p className='font-semibold '> Get More Information From </p>

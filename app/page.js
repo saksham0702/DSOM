@@ -2,71 +2,39 @@ import React from "react";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Left from "./components/Left";
-import { RxCross2 } from "react-icons/rx";
-
-import { FaRegHandPointRight } from "react-icons/fa6";
 import LeftImage from "./components/LeftImage";
 import Form from "./components/Form";
 import Last from "./components/Last";
+import Report from "./components/Report";
 import FooterB from "./components/FooterB";
+
 
 const page = () => {
   return (
     <main className="flex flex-col">
-    <div className=" h-[2000px] bg-[#eeeeee] flex flex-col">
-      <div className="w-[1140px] h-[24px] text-[13px]  flex absolute top-14 left-32 py-2 mt-2 gap-1">
-        <a className="text-blue-500 underline" href="">
-          Home
-        </a>{" "}
-        <p>/</p>{" "}
-        <a className="text-blue-500 underline" href="">
-          Coaching Institute
-        </a>{" "}
-        <p>/</p>{" "}
-        <p className="text-[#535a61] ">
-          DSOM - Dehradun School of Online Marketing
-        </p>
-      </div>
+      <div className="  bg-[#eeeeee] h-auto w-full  relative flex items-center justify-center">
+      <div className="absolute w-[280px] sm:w-[70%]   md:left-35 left-5 sm:left-10 top-15 my-2  text-sm overflow-x-auto  whitespace-nowrap">
+  <div className="flex items-center text-[#212529] w-max">
+    <div className="flex text-blue-700">
+      <p className="min-w-max underline pr-1">Home</p>/
+      <p className="min-w-max underline pr-1">Coaching Institute</p>/
+    </div>
+    <p className="min-w-max">
+      DSOM - Dehradun School of Online Marketing
+    </p>
+  </div>
+</div>
 
-      {/* center section */}
-      <div className="w-[1120px]  bg-white rounded-md border-1 flex flex-col border-gray-300 relative top-24 left-30">
-      <Hero />
-      <div className="flex ">
-        <div className="flex flex-col  min-w-[721.328px] ">
-        
-        <About />
-        </div>
-        <div>
 
-         <Left />
-         <div className="flex justify-between text-xs pt-1">
+         <div className=" md:w-[80%] w-[95%] my-5 top-15 relative h-[2000px] mt-8  bg-white rounded-md">
 
-          <div className="flex items-center relative right-2 gap-1 text-red-600">
-           <RxCross2 className="bg-red-600  text-white" />
-            <p>Report</p>
-          </div>
 
-           <div className="flex items-center mr-4">
-            <FaRegHandPointRight className="text-sm text-blue-600" />
-            <p>
-              Claim the Business
-            </p>
-           </div>
+          <Hero />
 
          </div>
-         <LeftImage />
-         <Form />
         
-        <Last />
-        
-        </div>
-
       </div>
-      </div>
-
-
-    </div>
-    <FooterB />
+      {/* <FooterB /> */}
     </main>
   );
 };

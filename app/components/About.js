@@ -4,9 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="flex flex-col">
-      <div className="h-[385px] w-[721.328px] rounded-md overflow-hidden ml-3 mt-3 ">
-        <Image src="/About.png" alt="about image" height={385} width={721} />
-      </div>
+    
 
       <div className="flex flex-col">
         {/* about section */}
@@ -14,7 +12,7 @@ const About = () => {
           About Us
         </h1>
         <hr className="ml-2 w-[65%] text-gray-300" />
-        <p className="w-[721.328px] h-auto text-[#212529] ml-4 my-3">
+        <p className="md:w-[721.328px] w-100 h-auto text-[#212529] ml-4 my-3">
           DSOM (Dehradun School of Online Marketing) is one of the top institute
           providing best digital marketing courses in Dehradun. Established in
           year and since then DSOM had trained more then + students and
@@ -35,11 +33,11 @@ const About = () => {
           Courses
         </h1>
         <hr className="ml-2 w-[65%] text-gray-300" />
-        <p className="w-[721.328px] h-auto text-sm text-[#212529] ml-4 mt-3">
+        <p className="md:w-[721.328px] w-100 h-auto text-sm text-[#212529] ml-4 mt-3">
           DSOM - Dehradun School of Online Marketing provides the following
           courses:
         </p>
-        <div className="flex ml-4 gap-45 my-5">
+        <div className="md:flex ml-4 gap-45 my-5">
           <div>
             <p className="flex items-center gap-1">
               <svg
@@ -149,11 +147,11 @@ const About = () => {
             Facilities
           </h1>
           <hr className="ml-2 w-[65%] text-gray-300" />
-          <p className="w-[721.328px] h-auto text-sm text-[#212529] ml-4 mt-3">
+          <p className=" md:w-[721.328px] w-100 h-auto text-sm text-[#212529] ml-4 mt-3">
             DSOM - Dehradun School of Online Marketing provides the following
             facilities:
           </p>
-          <div className="flex ml-4 gap-63 my-5">
+          <div className=" md:flex ml-4 gap-63 my-5">
             <div>
               <p className="flex items-center gap-1">
                 <svg
@@ -214,11 +212,11 @@ const About = () => {
             Payment Modes
           </h1>
           <hr className=" mx-4 w-[120vh] text-gray-300" />
-          <p className="w-[721.328px] h-auto text-sm text-[#212529] ml-4 my-3">
+          <p className="md:w-[721.328px] w-100 h-auto text-sm text-[#212529] ml-4 my-3">
             DSOM - Dehradun School of Online Marketing provides the following
             payment modes:
           </p>
-          <div className="flex ml-4 gap-78 mb-3">
+          <div className=" md:flex ml-4 gap-78 mb-3">
             <div>
               <p className="flex items-center gap-1">
                 <svg
@@ -293,7 +291,7 @@ const About = () => {
         {/* state-city */}
 
         <div className="flex flex-col">
-          <div className="flex gap-82">
+          <div className="md:flex gap-82">
             <h1 className="text-2xl font-bold ml-3 mt-4 mb-2  text-[#212529]">
               State
             </h1>
@@ -302,7 +300,7 @@ const About = () => {
             </h1>
           </div>
           <hr className="ml-2 w-[65%] text-gray-300 my-2" />
-          <div className="flex gap-75 mb-4">
+          <div className="md:flex gap-75 mb-4">
             <p className="ml-4">Uttrakhand</p>
             <p className="ml-4">Dehradun</p>
           </div>
@@ -310,11 +308,11 @@ const About = () => {
 
         {/* last section */}
         <div className="flex-col flex">
-          <h1 className="ml-3 text-3xl font-bold mt-6  w-[721.328px]  ">
+          <h1 className="ml-3 text-3xl font-bold mt-6 w-100  md:w-[721.328px]  ">
             Overview - DSOM - Dehradun School of Online Marketing
           </h1>
           <hr className="ml-2 w-[65%]  text-gray-300 my-2" />
-          <p className="w-[721.328px]   ml-3">
+          <p className="md:w-[721.328px] w-100  ml-3">
             DSOM - Dehradun School of Online Marketing at 29 Tagore Villa, Above
             Bank of Baroda, Connaught Place, Dehradun -Uttarakhand is a Coaching
             Institute in Dehradun. Their courses are :- SMO Training Digital
@@ -323,11 +321,11 @@ const About = () => {
             facilities are :- Wifi Transport 24 Hr Electricity , their
             acceptable payment mode is Cash Net Banking Cheque Other
           </p>
-          <p className="ml-4 my-5">
+          <p className="ml-4 my-5 w-100">
             Scroll to the top for more details of DSOM - Dehradun School of
             Online Marketing
           </p>
-          <p className="ml-4 mb-20">
+          <p className="ml-4 w-100 mb-20">
             Don't forget to tell, you found DSOM - Dehradun School of Online
             Marketing on <b>Address Guru</b>
           </p>

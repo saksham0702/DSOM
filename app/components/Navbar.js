@@ -8,55 +8,67 @@ import { CgLogIn } from "react-icons/cg";
 import Button from './Button';
 import Image from 'next/image';
 
-
 const Navbar = () => {
   return (
-    <nav className=' h-16 w-screen  bg-[#f8f9fa] text-[#212529] font-[16px] flex items-center gap-20   '>
-    {/* left-section */}
-    <div className='h-[42.5312px] w-[900px] flex items-center  '>
-        {/* icon */}
-       <div className=' ml-3 w-[60px] h-[30px] rounded-[6px] flex items-center justify-center border-[1px] border-gray-300 text-[18px]'>
+    <nav className='text-[#212529] bg-[#F8F9FA] flex items-center py-2 px-3 gap-2 justify-between w-full fixed z-50 '>
+      {/* left section */}
+
+      <div>
+      <div className=' px-2 md:py-1 py-2 font-light rounded-[6px] flex items-center justify-center border-[1px] border-gray-300 text-[18px]'>
        <RxHamburgerMenu />
        </div >
-       {/* image */}
-       <div className=' px-2 '>
+      </div>
+      {/* center section for mobile only */}
+      <div className='ml-1 flex items-center'> 
 
-       <Image 
-        src="/logopng.png"  
-        alt="logo-image"
-        height={250}
-        width={250}
-      />
+        <Image
+        src= "/logopng.png"
+        alt='Address Guru logo'
+        priority
+        height={160}
+        width={160}
+        />
 
-       </div>
-     {/* dropdown */}
-       <div>
-       <select
-      className="w-[321.469px] h-[38px] text-[16px] leading-[24px] font-normal tracking-normal 
+        {/* mid section chose and search */}
+        <div className=' hidden md:flex items-center'>
+
+          {/* chose section */}
+        <select
+      className="  w-[321.469px] h-[38px] text-[16px] leading-[24px] font-normal tracking-normal 
       px-1 text-[#212529] bg-white border border-gray-300 rounded-l-md ml-2
-       focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 border-r-0"
-    >
+       focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 border-r-0">
       <option >Choose City</option>
       <option value="newyork">New York</option>
       <option value="london">London</option>
       <option value="paris">Paris</option>
       <option value="tokyo">Tokyo</option>
     </select>
-       </div>
-       {/* search */}
-       <div className="w-[183.562px] h-[38px] flex items-center border border-gray-300 bg-white focus-within:ring-1 focus-within:ring-blue-500 focus-within:border-blue-500">
+    {/* SEARCH SECTION */}
+    <div className=" hidden  max-w-[183.562px] h-[38px] md:flex items-center border  border-gray-300 bg-white focus-within:ring-1 focus-within:ring-blue-500 focus-within:border-blue-500">
       <input
         type="text"
         placeholder="Search"
         className=" text-[16px] pl-3 tracking-normal text-[#212529]"
       />
     </div>
-    <div className="px-1 hover:bg-green-800 hover:text-white border-1 border-green-700 font-bold text-green-700 h-10 w-15 rounded-r-md flex items-center justify-center ">
-        <IoSearchSharp className=" text-xl " />
+    <div className="px-1 hover:bg-green-800 mr-10 hover:text-white border-1 border-green-700 font-bold text-green-700 h-9 w-10 rounded-r-md hidden md:flex items-center justify-center ">
+        <IoSearchSharp className=" text-xl  " />
       </div>
-    </div>
-   {/* right-section */}
-   <div className='h-[49px] w-[560.406px] flex items-center gap-5 ml-7'>
+
+        </div>
+
+
+      </div>
+
+
+      {/* right section */}
+
+      <div className=''>
+      <select className='text-blue-700 border-none text-[14px] md:hidden '>
+    <option value="dehradun">Dehradun</option>
+   </select>
+
+   <div className='h-[49px] max-w-[560.406px] hidden md:flex items-center pl-18 gap-5  '>
     {/* icon and text section */}
    <div className='flex items-center gap-7 h-full capitalize  text-blue-600 '>
      <div className='flex flex-col '>
@@ -79,18 +91,18 @@ const Navbar = () => {
 
 {/* button section */}
 <div className='flex gap-4 items-center'>
-<div className="  hover:bg-yellow-400 hover:text-black bg-orange-500 rounded-md px-3 py-2  text-white ">
-      <Button text="Post Free Add + " />
+<div className="  hover:bg-yellow-400 hover:text-black bg-orange-500 rounded-md px-3 py-3 flex flex-nowrap leading-none tracking-tighter w-32  text-white ">
+      <Button text="Post Free Add +" />
     </div>
 
 <div className='bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md'>
   <Button text="Login" Icon={CgLogIn}  />
 </div>
 </div>
-
-   
-
    </div>
+      </div>
+
+     
 
 
     </nav>

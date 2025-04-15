@@ -2,7 +2,7 @@ import React from 'react'
 
 const Last = () => {
   return (
-    <div className='flex flex-col h-[524px] w-[349px] text-[#212529] relative top-8 border-1 border-zinc-200 rounded-md right-3 p-4'>
+    <div className=' hidden md:flex flex-col  max-h-[524px] max-w-[349px] text-[#212529] relative top-8 border-1 border-zinc-200 rounded-md right-3 p-4'>
      <h1 className='text-2xl font-bold '>
      Useful Information
      </h1>
