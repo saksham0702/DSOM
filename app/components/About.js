@@ -8,7 +8,7 @@ const About = () => {
 
       <div className="flex flex-col text-[#212529]">
         {/* about section */}
-        <h1 className=" md:text-2xl font-bold  mt-4 mb-2 text-xl   ">
+        <h1 className=" md:text-2xl font-[630]  mt-4 mb-2 text-xl   ">
           About Us
         </h1>
         <hr className="w-full h-[1px] text-gray-200 px-5" />

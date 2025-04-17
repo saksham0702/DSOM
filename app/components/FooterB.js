@@ -15,10 +15,10 @@ import { FaPhoneAlt, FaEnvelope, FaHeadset } from "react-icons/fa";
 
 const FooterB = () => {
   return (
-    <div className='flex flex-col '>
+    <div className='flex flex-col pl-3 lg:pl-0 '>
 
        {/* first section of footer */}
-       <div className='flex flex-col lg:flex-row justify-around pl-20'>
+       <div className='flex flex-col lg:flex-row justify-around lg:pl-20'>
         {/* part 1 */}
         <div className="  flex flex-col gap-4  pt-8 ">
     <div className="object-cover h-12  w-47 relative left-18 ">
@@ -162,6 +162,78 @@ const FooterB = () => {
        </div>
 
         {/* second section */}
+
+        <div className=' mt-15 flex flex-col lg:flex-row lg:justify-around lg:px-20 pl-5 space-y-1 lg:space-y-0 '>
+
+          {/* contact section */}
+          <div>
+      <h3 className="font-bold ">Contact by Phone</h3>
+      <p className="flex items-center mt-2">
+        <FaPhoneAlt className="text-2xl relative top-1 " />
+        <a
+          href="tel:9410102425"
+          className="text-blue-600 text-sm pl-4 hover:underline"
+        >
+          94-1010-2425
+        </a>
+      </p>
+      <p className="text-xs pl-10 text-gray-600">
+        Booking time: 0800 - 2000 hrs
+      </p>
+    </div>
+
+    {/* feedback section */}
+     <div>
+      <h3 className="font-bold">Give your Feedback</h3>
+      <p className="flex items-center mt-2">
+        <FaEnvelope className="text-2xl relative top-1" />
+        <a
+          href="mailto:contact@addressguru.in"
+          className="text-blue-600 text-sm pl-4 hover:underline"
+        >
+          contact@addressguru.in
+        </a>
+      </p>
+      <p className="text-xs pl-10 text-gray-600">Help us improve!</p>
+    </div>
+
+    {/* Services and Support */}
+    <div>
+      <h3 className="font-bold">Services and Support</h3>
+      <p className="flex items-center mt-2">
+        <FaHeadset className="text-2xl relative top-1" />
+        <a
+          href="#"
+          className="text-blue-600 text-sm pl-4 hover:underline"
+        >
+          Support Centre
+        </a>
+      </p>
+      <p className="text-xs pl-10 text-gray-600">
+        29, Tagore Villa, Dehradun UK
+      </p>
+    </div>
+
+        {/* Our Partners */}
+        <div>
+      <h3 className="font-bold lg:pr-10 ">Our Partners</h3>
+      <Image
+      className="mt-6 relative "
+        src="/adxventure_logo.png"
+        alt="Partners"
+        width={150}
+        height={100}
+      />
+      
+     
+    </div>
+
+    {/* third section description and partners */}
+
+
+
+
+        </div>
 
  
 

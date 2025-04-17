@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
+import FooterB from "./components/FooterB";
 
 
 
@@ -28,7 +29,7 @@ const page = () => {
          </div>
         
       </div>
-      {/* <FooterB /> */}
+      <FooterB />
     </main>
   );
 };
