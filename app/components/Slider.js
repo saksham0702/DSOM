@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,8 +12,7 @@ import { FaShare } from 'react-icons/fa';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { RxCross1 } from 'react-icons/rx';
 
-const Slider = () => {
- 
+const Slider = ({sliderImage,at,id}) => {
   const [pop, setpop] = useState(false);
     
   const getPopup = () => {
@@ -23,6 +21,7 @@ const Slider = () => {
   return (
     
     <div className=" w-full h-[160px] md:h-[300px]  lg:w-[720px]   lg:h-[400px] lg:mt-5 ">
+    
     {/* pop section starts  */}
     {pop === true ? (
         <div className="fixed z-[999999999] bg-black/50 w-full h-[100vh] top-0 left-0 m-0">
@@ -78,14 +77,14 @@ const Slider = () => {
            <div onClick={getPopup} className="absolute top-0 right-0 h-7 w-7 cursor-pointer shadow-md border-1 border-gray-200 flex items-center justify-center rounded-md bg-white text-black sm:hidden z-10">
               <FaShare />
             </div>
-        {[1, 2, 3, 4, 5].map((item) => (
+        {sliderImage?.map((item) => (
           <SwiperSlide
             key={item}
             className="relative w-full h-full rounded-md bg-white flex justify-center items-center"
           >
             <Image
-              src={`/slider${item}.png`}
-              alt={`Slide ${item}`}
+              src={item}
+              alt={item}
               fill
               className="object-cover rounded-md"
             />
@@ -95,7 +94,7 @@ const Slider = () => {
       </Swiper>
        <div className="lg:flex flex-col hidden w-full gap-2 px-1">
           <p className="text-[10px] left-140 mt-1  absolute">
-            Posted At: 31 Aug 2018 | Ad Id: 13
+          Posted At: {at} | Ad Id: {id}
           </p>
           </div>
     </div>
